@@ -1,0 +1,5 @@
+distro,release,libc,glibc_baseline,linux_uapi_headers_baseline,sysroot_target,recommendation,notes,source_url
+SLES,15 SP6,glibc,2.38,6.4,linux-glibc-2.38-uapi-6.4,SLES 15 SP6 target,SUSE service pack matters; do not collapse all SLES 15 releases.,https://documentation.suse.com/releasenotes/sles/15-SP6/index.html
+SLES,15 SP7,glibc,2.38,6.4,linux-glibc-2.38-uapi-6.4,SLES 15 SP7 target,SP7 still based on kernel 6.4 and glibc 2.38.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15-SP7/index.html
+SLES,16.0,glibc,2.40,6.12,linux-glibc-2.40-uapi-6.12,modern SLES target,SLES 16.0 modern baseline.,https://www.suse.com/c/what-is-new-in-suse-linux-enterprise-server-16-0/
+openSUSE Leap,15.6,glibc,2.38,6.4,linux-glibc-2.38-uapi-6.4,Leap 15.6 / SLE 15 SP6-compatible target,Leap 15.6 is built on SLE 15 SP6; use SP-specific baseline.,https://news.opensuse.org/2024/03/07/leap-reaches-beta-phase/

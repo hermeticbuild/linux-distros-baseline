@@ -1,0 +1,5 @@
+distro,release,libc,libc_baseline,linux_uapi_headers_baseline,sysroot_target,recommendation,notes,source_url
+Alpine,3.20,musl,musl (not glibc),not a glibc sysroot target,linux-musl-alpine-3.20 or generic musl target,separate musl world,Do not put Alpine in a glibc matrix.,https://alpinelinux.org/posts/Alpine-3.20.0-released.html
+Alpine,3.21,musl,musl (not glibc),6.12,linux-musl-alpine-3.21,separate musl world,Alpine 3.21 announcement highlights Linux kernel 6.12.,https://alpinelinux.org/posts/Alpine-3.21.0-released.html
+Alpine,3.22,musl,musl (not glibc),6.12,linux-musl-alpine-3.22,separate musl world,Alpine 3.22 is still musl; kernel reported as 6.12 LTS by release coverage.,https://www.alpinelinux.org/posts/Alpine-3.22.0-released.html
+Alpine,3.23,musl,musl (not glibc),snapshot-specific,linux-musl-alpine-3.23,separate musl world,Treat by pinned Alpine release branch; not glibc-compatible.,https://alpinelinux.org/releases/

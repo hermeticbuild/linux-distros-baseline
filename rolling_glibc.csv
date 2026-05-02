@@ -1,0 +1,6 @@
+distro,release_model,libc,glibc_baseline,linux_uapi_headers_baseline,sysroot_target,recommendation,notes,source_url
+Arch Linux,rolling,glibc,snapshot-specific,snapshot-specific,pin exact package snapshot/date; do not name as stable baseline,testing/latest only,Rolling distro; package versions change continuously.,https://archlinux.org/packages/core/x86_64/glibc/
+openSUSE Tumbleweed,rolling,glibc,snapshot-specific,snapshot-specific,pin exact snapshot/date; do not name as stable baseline,testing/latest only,Rolling distro; use snapshot IDs if you must target it.,https://get.opensuse.org/tumbleweed/
+Gentoo,source/rolling profile,glibc or musl depending profile,profile/snapshot-specific,profile/snapshot-specific,pin profile + package set,not a generic binary baseline,Too configurable for a single distro sysroot baseline.,https://www.gentoo.org/
+Void Linux,rolling,glibc or musl variants,snapshot-specific,snapshot-specific,pin exact variant + snapshot/date,not a generic binary baseline,Separate glibc and musl variants.,https://voidlinux.org/
+NixOS unstable,snapshot/channel,glibc by default for GNU/Linux stdenv,channel/snapshot-specific,channel/snapshot-specific,pin nixpkgs revision,not a distro ABI floor,Use pinned nixpkgs revision rather than distro release name.,https://nixos.org/

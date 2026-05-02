@@ -1,0 +1,5 @@
+distro,release,libc,glibc_baseline,sane_kernel_uapi_default,sysroot_target,recommendation,notes,source_url
+Fedora,41,glibc,2.40,6.11,linux-glibc-2.40-uapi-6.11,short-lived Fedora target only,"Fedora kernels move within a release; this is the release/initial sane default, not long-term ABI floor.",https://fedoraproject.org/wiki/Releases/41/ChangeSet
+Fedora,42,glibc,2.41,6.14,linux-glibc-2.41-uapi-6.14,short-lived Fedora target only,Fedora package page shows kernel 6.14.0-63 for the release; updates may move much higher.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-42.html
+Fedora,43,glibc,2.42,6.17,linux-glibc-2.42-uapi-6.17,short-lived Fedora target only,Fedora package page shows kernel 6.17.1-300 for the release; updates may move much higher.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-43.html
+Fedora,44,glibc,2.43,6.19,linux-glibc-2.43-uapi-6.19,latest Fedora target only,Fedora package page shows kernel 6.19.10-300 for release; updates already move within release.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-44.html
