@@ -1,3 +1,4 @@
-distro,release,libc,glibc_baseline,linux_uapi_headers_baseline,sysroot_target,recommendation,notes,source_url
-Amazon Linux,2,glibc,2.26,4.14 default; 5.10 encouraged/available,linux-glibc-2.26-uapi-4.14 or linux-glibc-2.26-uapi-5.10,legacy AWS only,AL2 reaches EOL 2026-06-30; AWS encourages kernel 5.10 or AL2023.,https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260427.html
-Amazon Linux,2023,glibc,2.34,6.1 default/original; 6.12 or 6.18 tracks by AMI release,linux-glibc-2.34-uapi-6.1 or newer kernel-track-specific target,good AWS/current cloud baseline,Do not collapse AL2023 to one kernel; AWS has deterministic release snapshots and multiple kernel tracks.,https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023.11.20260427.html
+distro,release,libc,glibc_baseline,linux_uapi_headers_baseline,recommendation,notes,source_url
+Amazon Linux,AMI 2018.03,glibc,2.17,4.14,legacy AWS only,Amazon Linux 1 final line; older AMI snapshots had earlier kernels.,https://docs.aws.amazon.com/linux/al1/ug/relnotes-2018.03.html
+Amazon Linux,2,glibc,2.26,4.14 default; 5.10 available,legacy AWS only,AL2 reaches EOL 2026-06-30; AWS encourages kernel 5.10 or AL2023.,https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260427.html
+Amazon Linux,2023,glibc,2.34,6.1 original; 6.12 or newer tracks by AMI release,good AWS/current cloud baseline,Use deterministic release snapshots; do not collapse AL2023 to one kernel line for all AMIs.,https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023.11.20260427.html

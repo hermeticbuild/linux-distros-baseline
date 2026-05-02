@@ -1,8 +1,12 @@
-distro,release,codename,product_or_stack,libc,glibc_baseline,linux_uapi_headers_baseline,sysroot_target,recommendation,notes,source_url
-Ubuntu,18.04 LTS,bionic,GA generic,glibc,2.27,4.15,linux-glibc-2.27-uapi-4.15,legacy only,Use only if you still intentionally support 18.04/old fleets.,https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes/18.04
-Ubuntu,20.04 LTS,focal,GA generic / conservative baseline,glibc,2.31,5.4,linux-glibc-2.31-uapi-5.4,old Ubuntu LTS floor,Use GA 5.4 as Focal sysroot baseline. HWE exists but is not the conservative sysroot target.,https://wiki.ubuntu.com/FocalFossa/ReleaseNotes
-Ubuntu,20.04 LTS,focal,HWE / point-release desktop path,glibc,2.31,rolling HWE; release notes mention 5.8 after point update,not recommended as a compatibility floor,do not model as baseline,Kernel stack can move; glibc stays 2.31.,https://wiki.ubuntu.com/FocalFossa/ReleaseNotes
-Ubuntu,22.04 LTS,jammy,Server default / GA generic,glibc,2.35,5.15,linux-glibc-2.35-uapi-5.15,Ubuntu 22.04 target,Too new for RHEL 8/Ubuntu 20.04 if GLIBC_2.32+ symbols leak.,https://documentation.ubuntu.com/release-notes/22.04/
-Ubuntu,22.04 LTS,jammy,Desktop HWE/OEM,glibc,2.35,rolling HWE/OEM; OEM may start at 5.17,not recommended as a compatibility floor,do not model as baseline,Ubuntu documents multiple optimized kernels by product; glibc stays 2.35.,https://documentation.ubuntu.com/release-notes/22.04/
-Ubuntu,24.04 LTS,noble,GA generic,glibc,2.39,6.8,linux-glibc-2.39-uapi-6.8,modern Ubuntu LTS target,"Good 2024+ target, not broad backwards compatibility.",https://documentation.ubuntu.com/release-notes/24.04/
-Ubuntu,26.04 LTS,resolute,GA generic,glibc,2.43,7.0,linux-glibc-2.43-uapi-7.0,future/latest Ubuntu target only,Too new as a general baseline.,https://documentation.ubuntu.com/release-notes/26.04/changes-since-previous-interim/
+distro,release,codename,product_or_stack,libc,glibc_baseline,linux_uapi_headers_baseline,recommendation,notes,source_url
+Ubuntu,6.06 LTS,dapper,GA generic,glibc,2.3.6,2.6.15,historical only,First Ubuntu LTS class baseline; too old for normal targets.,https://wiki.ubuntu.com/DapperReleaseNotes
+Ubuntu,8.04 LTS,hardy,GA generic,glibc,2.7,2.6.24,historical only,Old LTS compatibility reference.,https://wiki.ubuntu.com/HardyReleaseNotes
+Ubuntu,10.04 LTS,lucid,GA generic,glibc-compatible eglibc,2.11.1,2.6.32,historical only,Ubuntu used eglibc packaging; ABI baseline is GLIBC_2.11 era.,https://wiki.ubuntu.com/LucidLynx/ReleaseNotes
+Ubuntu,12.04 LTS,precise,GA generic,glibc-compatible eglibc,2.15,3.2,historical only,GA kernel only; later point-release kernels intentionally excluded.,https://wiki.ubuntu.com/PrecisePangolin/ReleaseNotes/UbuntuDesktop
+Ubuntu,14.04 LTS,trusty,GA generic,glibc-compatible eglibc,2.19,3.13,historical only,GA kernel only; later point-release kernels intentionally excluded.,https://wiki.ubuntu.com/TrustyTahr/ReleaseNotes
+Ubuntu,16.04 LTS,xenial,GA generic,glibc,2.23,4.4,legacy only,GA kernel only; useful as an old Linux floor if still required.,https://wiki.ubuntu.com/XenialXerus/ReleaseNotes/16.04
+Ubuntu,18.04 LTS,bionic,GA generic,glibc,2.27,4.15,legacy only,Use only if intentionally supporting 18.04 or similarly old fleets.,https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes/18.04
+Ubuntu,20.04 LTS,focal,GA generic,glibc,2.31,5.4,old Ubuntu LTS floor,GA kernel only; later point-release kernels intentionally excluded.,https://wiki.ubuntu.com/FocalFossa/ReleaseNotes
+Ubuntu,22.04 LTS,jammy,GA generic,glibc,2.35,5.15,Ubuntu 22.04 target,Too new for RHEL 8 or Ubuntu 20.04 if GLIBC_2.32+ symbols leak.,https://documentation.ubuntu.com/release-notes/22.04/
+Ubuntu,24.04 LTS,noble,GA generic,glibc,2.39,6.8,modern Ubuntu LTS target,Good 2024+ target; not broad backwards compatibility.,https://documentation.ubuntu.com/release-notes/24.04/
+Ubuntu,26.04 LTS,resolute,GA generic,glibc,2.42,7.0,latest Ubuntu LTS target,Released 2026-04-23; too new as a general compatibility floor.,https://documentation.ubuntu.com/release-notes/26.04/changes-since-previous-interim/; https://launchpad.net/ubuntu/resolute/+source/glibc
