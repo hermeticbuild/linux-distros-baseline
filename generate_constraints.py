@@ -15,6 +15,8 @@ FIELDS = (
     "libc",
     "libc_baseline",
     "linux_uapi_headers_baseline",
+    "notes",
+    "source_url",
 )
 
 
@@ -57,6 +59,10 @@ def kernel_constraint(version: str) -> str | None:
     return f"@llvm//constraints/kernel/linux:{version}"
 
 
+def comment(label: str, value: str) -> str:
+    return f"# {label}: {value}"
+
+
 def read_rows(csv_dir: Path) -> list[tuple[Path, dict[str, str]]]:
     rows: list[tuple[Path, dict[str, str]]] = []
     for path in sorted(csv_dir.glob("*.csv")):
@@ -95,6 +101,8 @@ def generate(csv_dir: Path) -> str:
 
         lines.extend(
             [
+                comment("notes", row["notes"]),
+                comment("source_url", row["source_url"]),
                 f"{name} = [",
                 f'    "{libc}",',
                 f'    "{kernel}",',
