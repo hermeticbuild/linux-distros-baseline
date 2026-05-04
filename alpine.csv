@@ -10,4 +10,4 @@ Alpine,3.19,,,musl,1.2.4,6.6,,Musl target; not glibc-compatible.,https://alpinel
 Alpine,3.20,,,musl,1.2.5,6.6,,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.20.0-released.html
 Alpine,3.21,,,musl,1.2.5,6.12,,Alpine 3.21 announcement highlights Linux kernel 6.12.,https://alpinelinux.org/posts/Alpine-3.21.0-released.html
 Alpine,3.22,,,musl,1.2.5,6.12,,Musl target; not glibc-compatible.,https://www.alpinelinux.org/posts/Alpine-3.22.0-released.html
-Alpine,3.23,,,musl,1.2.5,snapshot-specific,,Treat by pinned Alpine release branch; not glibc-compatible.,https://alpinelinux.org/releases/
+Alpine,3.23,,,musl,1.2.5,6.18,6.12 for Pi kernels,Release notes call out Linux kernel 6.18 except Pi kernels still on 6.12.,https://www.alpinelinux.org/posts/Alpine-3.23.0-released.html
