@@ -1,12 +1,12 @@
-distro,release,libc,glibc_baseline,linux_uapi_headers_baseline,recommendation,notes,source_url
-SLES,12 SP5,glibc,2.22,4.12,SLES 12 SP5 target,Old SUSE enterprise floor; service pack matters.,https://documentation.suse.com/releasenotes/sles/12-SP5/index.html
-SLES,15 GA,glibc,2.26,4.12,SLES 15 GA target,Do not collapse all SLES 15 service packs into one baseline.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15/index.html
-SLES,15 SP2,glibc,2.26,5.3,SLES 15 SP2 target,Kernel jumped while glibc stayed old.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15-SP2/index.html
-SLES,15 SP4,glibc,2.31,5.14,SLES 15 SP4 target,Use SP-specific baseline.,https://susedoc.github.io/release-notes/sles-15_SP4/html/release-notes/
-SLES,15 SP5,glibc,2.31,5.14,SLES 15 SP5 target,Use SP-specific baseline.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15-SP5/index.html
-SLES,15 SP6,glibc,2.38,6.4,SLES 15 SP6 target,SUSE release notes call out glibc 2.38 and Linux 6.4.,https://documentation.suse.com/releasenotes/sles/15-SP6/index.html
-SLES,15 SP7,glibc,2.38,6.4,SLES 15 SP7 target,SP7 remains 6.4 and glibc 2.38 class.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15-SP7/index.html
-SLES,16.0,glibc,2.40,6.12,modern SLES target,SLES 16.0 modern baseline.,https://www.suse.com/c/what-is-new-in-suse-linux-enterprise-server-16-0/
-openSUSE Leap,15.4,glibc,2.31,5.14,Leap 15.4 / SLE 15 SP4-compatible target,Leap tracks SLE service-pack baselines.,https://get.opensuse.org/leap/15.4/
-openSUSE Leap,15.5,glibc,2.31,5.14,Leap 15.5 / SLE 15 SP5-compatible target,Leap tracks SLE service-pack baselines.,https://get.opensuse.org/leap/15.5/
-openSUSE Leap,15.6,glibc,2.38,6.4,Leap 15.6 / SLE 15 SP6-compatible target,Leap 15.6 is built on SLE 15 SP6; use SP-specific baseline.,https://news.opensuse.org/2024/03/07/leap-reaches-beta-phase/
+distro,release,codename,variant,libc,libc_baseline,linux_uapi_headers_baseline,alternate_linux_uapi_headers_baseline,notes,source_url
+SLES,12 SP5,,,glibc,2.22,4.12,,Old SUSE enterprise floor; service pack matters.,https://documentation.suse.com/releasenotes/sles/12-SP5/index.html
+SLES,15 GA,,,glibc,2.26,4.12,,Do not collapse all SLES 15 service packs into one baseline.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15/index.html
+SLES,15 SP2,,,glibc,2.26,5.3,,Kernel jumped while glibc stayed old.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15-SP2/index.html
+SLES,15 SP4,,,glibc,2.31,5.14,,Use SP-specific baseline.,https://susedoc.github.io/release-notes/sles-15_SP4/html/release-notes/
+SLES,15 SP5,,,glibc,2.31,5.14,,Use SP-specific baseline.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15-SP5/index.html
+SLES,15 SP6,,,glibc,2.38,6.4,,SUSE release notes call out glibc 2.38 and Linux 6.4.,https://documentation.suse.com/releasenotes/sles/15-SP6/index.html
+SLES,15 SP7,,,glibc,2.38,6.4,,SP7 remains 6.4 and glibc 2.38 class.,https://www.suse.com/releasenotes/x86_64/SUSE-SLES/15-SP7/index.html
+SLES,16.0,,,glibc,2.40,6.12,,SLES 16.0 modern baseline.,https://www.suse.com/c/what-is-new-in-suse-linux-enterprise-server-16-0/
+openSUSE Leap,15.4,,,glibc,2.31,5.14,,Leap tracks SLE service-pack baselines.,https://get.opensuse.org/leap/15.4/
+openSUSE Leap,15.5,,,glibc,2.31,5.14,,Leap tracks SLE service-pack baselines.,https://get.opensuse.org/leap/15.5/
+openSUSE Leap,15.6,,,glibc,2.38,6.4,,Leap 15.6 is built on SLE 15 SP6; use SP-specific baseline.,https://news.opensuse.org/2024/03/07/leap-reaches-beta-phase/

@@ -1,13 +1,13 @@
-distro,release,libc,libc_baseline,linux_uapi_headers_baseline,recommendation,notes,source_url
-Alpine,3.12,musl,1.1.24,5.4,separate musl world,Do not put Alpine in a glibc matrix.,https://alpinelinux.org/posts/Alpine-3.12.0-released.html
-Alpine,3.13,musl,1.2.2,5.10,separate musl world,First common post-time64 musl baseline in this table.,https://alpinelinux.org/posts/Alpine-3.13.0-released.html
-Alpine,3.14,musl,1.2.2,5.10,separate musl world,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.14.0-released.html
-Alpine,3.15,musl,1.2.2,5.15,separate musl world,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.15.0-released.html
-Alpine,3.16,musl,1.2.3,5.15,separate musl world,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.16.0-released.html
-Alpine,3.17,musl,1.2.3,5.15,separate musl world,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.17.0-released.html
-Alpine,3.18,musl,1.2.4,6.1,separate musl world,Release notes call out linux-lts 6.1 and musl 1.2.4.,https://wiki.alpinelinux.org/wiki/Release_Notes_for_Alpine_3.18.0
-Alpine,3.19,musl,1.2.4,6.6,separate musl world,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.19.0-released.html
-Alpine,3.20,musl,1.2.5,6.6,separate musl world,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.20.0-released.html
-Alpine,3.21,musl,1.2.5,6.12,separate musl world,Alpine 3.21 announcement highlights Linux kernel 6.12.,https://alpinelinux.org/posts/Alpine-3.21.0-released.html
-Alpine,3.22,musl,1.2.5,6.12,separate musl world,Musl target; not glibc-compatible.,https://www.alpinelinux.org/posts/Alpine-3.22.0-released.html
-Alpine,3.23,musl,1.2.5,snapshot-specific,separate musl world,Treat by pinned Alpine release branch; not glibc-compatible.,https://alpinelinux.org/releases/
+distro,release,codename,variant,libc,libc_baseline,linux_uapi_headers_baseline,alternate_linux_uapi_headers_baseline,notes,source_url
+Alpine,3.12,,,musl,1.1.24,5.4,,Do not put Alpine in a glibc matrix.,https://alpinelinux.org/posts/Alpine-3.12.0-released.html
+Alpine,3.13,,,musl,1.2.2,5.10,,First common post-time64 musl baseline in this table.,https://alpinelinux.org/posts/Alpine-3.13.0-released.html
+Alpine,3.14,,,musl,1.2.2,5.10,,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.14.0-released.html
+Alpine,3.15,,,musl,1.2.2,5.15,,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.15.0-released.html
+Alpine,3.16,,,musl,1.2.3,5.15,,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.16.0-released.html
+Alpine,3.17,,,musl,1.2.3,5.15,,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.17.0-released.html
+Alpine,3.18,,,musl,1.2.4,6.1,,Release notes call out linux-lts 6.1 and musl 1.2.4.,https://wiki.alpinelinux.org/wiki/Release_Notes_for_Alpine_3.18.0
+Alpine,3.19,,,musl,1.2.4,6.6,,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.19.0-released.html
+Alpine,3.20,,,musl,1.2.5,6.6,,Musl target; not glibc-compatible.,https://alpinelinux.org/posts/Alpine-3.20.0-released.html
+Alpine,3.21,,,musl,1.2.5,6.12,,Alpine 3.21 announcement highlights Linux kernel 6.12.,https://alpinelinux.org/posts/Alpine-3.21.0-released.html
+Alpine,3.22,,,musl,1.2.5,6.12,,Musl target; not glibc-compatible.,https://www.alpinelinux.org/posts/Alpine-3.22.0-released.html
+Alpine,3.23,,,musl,1.2.5,snapshot-specific,,Treat by pinned Alpine release branch; not glibc-compatible.,https://alpinelinux.org/releases/

@@ -1,10 +1,10 @@
-distro,compatible_el_major,libc,glibc_baseline,linux_uapi_headers_baseline,recommendation,notes,source_url
-CentOS Linux,5,glibc,2.5,2.6.18,same as RHEL 5 for userland ABI,Historical clone; not a current target.,https://docs.redhat.com/en/documentation/Red_Hat_Enterprise_Linux/5/html/5.0_release_notes/index
-CentOS Linux,6,glibc,2.12,2.6.32,same as RHEL 6 for userland ABI,Historical clone; not a current target.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/6/html/6.0_release_notes/index
-CentOS Linux,7,glibc,2.17,3.10,same as RHEL 7 for userland ABI,Use only if explicit old fleet support is required.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html-single/7.0_release_notes/index
-Rocky Linux / AlmaLinux,8,glibc,2.28,4.18,same as RHEL 8 for userland ABI,Treat as EL8-compatible for ABI; distro package revisions differ.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/8.0_release_notes/index
-Rocky Linux / AlmaLinux,9,glibc,2.34,5.14,same as RHEL 9 for userland ABI,Treat as EL9-compatible for ABI; distro package revisions differ.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/9.0_release_notes/index
-Rocky Linux / AlmaLinux,10,glibc,2.39,6.12,same as RHEL 10 for userland ABI,Keep x86-64-v3 CPU baseline separate from libc/UAPI.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/10.0_release_notes/index
-CentOS Stream,8,glibc,2.28,4.18,prefer RHEL 8 for compatibility,Stream is moving; use RHEL major for a frozen ABI label.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/8.0_release_notes/index
-CentOS Stream,9,glibc,2.34,5.14,prefer RHEL 9 for compatibility,Stream is moving; use RHEL major for a frozen ABI label.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/9.0_release_notes/index
-CentOS Stream,10,glibc,2.39,6.12,prefer RHEL 10 for compatibility,Useful for testing; less useful as a frozen compatibility label.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/10.0_release_notes/index
+distro,release,codename,variant,libc,libc_baseline,linux_uapi_headers_baseline,alternate_linux_uapi_headers_baseline,notes,source_url
+CentOS Linux,5,,,glibc,2.5,2.6.18,,Historical clone; not a current target.,https://docs.redhat.com/en/documentation/Red_Hat_Enterprise_Linux/5/html/5.0_release_notes/index
+CentOS Linux,6,,,glibc,2.12,2.6.32,,Historical clone; not a current target.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/6/html/6.0_release_notes/index
+CentOS Linux,7,,,glibc,2.17,3.10,,Use only if explicit old fleet support is required.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html-single/7.0_release_notes/index
+Rocky Linux / AlmaLinux,8,,,glibc,2.28,4.18,,Treat as EL8-compatible for ABI; distro package revisions differ.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/8.0_release_notes/index
+Rocky Linux / AlmaLinux,9,,,glibc,2.34,5.14,,Treat as EL9-compatible for ABI; distro package revisions differ.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/9.0_release_notes/index
+Rocky Linux / AlmaLinux,10,,,glibc,2.39,6.12,,Keep x86-64-v3 CPU baseline separate from libc/UAPI.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/10.0_release_notes/index
+CentOS Stream,8,,,glibc,2.28,4.18,,Stream is moving; use RHEL major for a frozen ABI label.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/8.0_release_notes/index
+CentOS Stream,9,,,glibc,2.34,5.14,,Stream is moving; use RHEL major for a frozen ABI label.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/9.0_release_notes/index
+CentOS Stream,10,,,glibc,2.39,6.12,,Useful for testing; less useful as a frozen compatibility label.,https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/10.0_release_notes/index

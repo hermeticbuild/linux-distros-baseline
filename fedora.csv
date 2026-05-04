@@ -1,28 +1,28 @@
-distro,release,libc,glibc_baseline,linux_uapi_headers_baseline,recommendation,notes,source_url
-Fedora,18,glibc,2.16,3.6,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/18/Release_Notes
-Fedora,19,glibc,2.17,3.9,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/19/Release_Notes
-Fedora,20,glibc,2.18,3.11,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/20/Release_Notes
-Fedora,21,glibc,2.20,3.17,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/21/Release_Notes
-Fedora,22,glibc,2.21,4.0,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/22/Release_Notes
-Fedora,23,glibc,2.22,4.2,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/23/Release_Notes
-Fedora,24,glibc,2.23,4.5,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/24/Release_Notes
-Fedora,25,glibc,2.24,4.8,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/25/Release_Notes
-Fedora,26,glibc,2.25,4.11,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/26/Release_Notes
-Fedora,27,glibc,2.26,4.13,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/27/Release_Notes
-Fedora,28,glibc,2.27,4.16,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/28/Release_Notes
-Fedora,29,glibc,2.28,4.18,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/29/Release_Notes
-Fedora,30,glibc,2.29,5.0,historical only,Release notes document glibc 2.29; kernel is release-media baseline.,https://docs.fedoraproject.org/en-US/fedora/f30/release-notes/developers/Development_C/
-Fedora,31,glibc,2.30,5.3,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/31/Release_Notes
-Fedora,32,glibc,2.31,5.6,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/32/Release_Notes
-Fedora,33,glibc,2.32,5.8,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/33/Release_Notes
-Fedora,34,glibc,2.33,5.11,historical only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/34/Release_Notes
-Fedora,35,glibc,2.34,5.14,legacy only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/35/Release_Notes
-Fedora,36,glibc,2.35,5.17,legacy only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/36/Release_Notes
-Fedora,37,glibc,2.36,6.0,legacy only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/37/Release_Notes
-Fedora,38,glibc,2.37,6.2,short-lived Fedora target only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/38/Release_Notes
-Fedora,39,glibc,2.38,6.5,short-lived Fedora target only,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/39/Release_Notes
-Fedora,40,glibc,2.39,6.8,short-lived Fedora target only,Release coverage and package set show glibc 2.39 and Linux 6.8 class.,https://fedoraproject.org/wiki/Releases/40/ChangeSet
-Fedora,41,glibc,2.40,6.11,short-lived Fedora target only,Fedora kernels move within a release; this is the release/initial sane default.,https://fedoraproject.org/wiki/Releases/41/ChangeSet
-Fedora,42,glibc,2.41,6.14,short-lived Fedora target only,Fedora package pages move after release; keep this as initial baseline.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-42.html
-Fedora,43,glibc,2.42,6.17,short-lived Fedora target only,Fedora package pages move after release; keep this as initial baseline.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-43.html
-Fedora,44,glibc,2.43,6.19,latest Fedora target only,Fedora package page currently shows Fedora 44 on the 6.19 kernel line.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-44.html
+distro,release,codename,variant,libc,libc_baseline,linux_uapi_headers_baseline,alternate_linux_uapi_headers_baseline,notes,source_url
+Fedora,18,,,glibc,2.16,3.6,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/18/Release_Notes
+Fedora,19,,,glibc,2.17,3.9,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/19/Release_Notes
+Fedora,20,,,glibc,2.18,3.11,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/20/Release_Notes
+Fedora,21,,,glibc,2.20,3.17,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/21/Release_Notes
+Fedora,22,,,glibc,2.21,4.0,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/22/Release_Notes
+Fedora,23,,,glibc,2.22,4.2,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/23/Release_Notes
+Fedora,24,,,glibc,2.23,4.5,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/24/Release_Notes
+Fedora,25,,,glibc,2.24,4.8,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/25/Release_Notes
+Fedora,26,,,glibc,2.25,4.11,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/26/Release_Notes
+Fedora,27,,,glibc,2.26,4.13,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/27/Release_Notes
+Fedora,28,,,glibc,2.27,4.16,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/28/Release_Notes
+Fedora,29,,,glibc,2.28,4.18,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/29/Release_Notes
+Fedora,30,,,glibc,2.29,5.0,,Release notes document glibc 2.29; kernel is release-media baseline.,https://docs.fedoraproject.org/en-US/fedora/f30/release-notes/developers/Development_C/
+Fedora,31,,,glibc,2.30,5.3,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/31/Release_Notes
+Fedora,32,,,glibc,2.31,5.6,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/32/Release_Notes
+Fedora,33,,,glibc,2.32,5.8,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/33/Release_Notes
+Fedora,34,,,glibc,2.33,5.11,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/34/Release_Notes
+Fedora,35,,,glibc,2.34,5.14,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/35/Release_Notes
+Fedora,36,,,glibc,2.35,5.17,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/36/Release_Notes
+Fedora,37,,,glibc,2.36,6.0,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/37/Release_Notes
+Fedora,38,,,glibc,2.37,6.2,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/38/Release_Notes
+Fedora,39,,,glibc,2.38,6.5,,Release-media kernel/header baseline; Fedora moves quickly after release.,https://fedoraproject.org/wiki/Releases/39/Release_Notes
+Fedora,40,,,glibc,2.39,6.8,,Release coverage and package set show glibc 2.39 and Linux 6.8 class.,https://fedoraproject.org/wiki/Releases/40/ChangeSet
+Fedora,41,,,glibc,2.40,6.11,,Fedora kernels move within a release; this is the release/initial sane default.,https://fedoraproject.org/wiki/Releases/41/ChangeSet
+Fedora,42,,,glibc,2.41,6.14,,Fedora package pages move after release; keep this as initial baseline.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-42.html
+Fedora,43,,,glibc,2.42,6.17,,Fedora package pages move after release; keep this as initial baseline.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-43.html
+Fedora,44,,,glibc,2.43,6.19,,Fedora package page currently shows Fedora 44 on the 6.19 kernel line.,https://packages.fedoraproject.org/pkgs/kernel/kernel/fedora-44.html

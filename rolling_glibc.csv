@@ -1,8 +1,8 @@
-distro,release_model,libc,glibc_baseline,linux_uapi_headers_baseline,recommendation,notes,source_url
-Arch Linux,rolling,glibc,snapshot-specific,snapshot-specific,testing/latest only,Package versions change continuously; pin package snapshot date if used.,https://archlinux.org/packages/core/x86_64/glibc/
-openSUSE Tumbleweed,rolling,glibc,snapshot-specific,snapshot-specific,testing/latest only,Use snapshot IDs if you must target it.,https://get.opensuse.org/tumbleweed/
-Fedora Rawhide,rolling development,glibc,snapshot-specific,snapshot-specific,testing/latest only,Not a stable ABI floor; use released Fedora rows instead.,https://fedoraproject.org/wiki/Releases/Rawhide
-Debian sid,rolling development,glibc,snapshot-specific,snapshot-specific,testing/latest only,Not a stable ABI floor; use released Debian rows instead.,https://www.debian.org/releases/sid/
-Gentoo,source/rolling profile,glibc or musl depending profile,profile/snapshot-specific,profile/snapshot-specific,not a generic binary baseline,Too configurable for a single distro baseline.,https://www.gentoo.org/
-Void Linux,rolling,glibc or musl variants,snapshot-specific,snapshot-specific,not a generic binary baseline,Separate glibc and musl variants; pin exact variant and snapshot.,https://voidlinux.org/
-NixOS unstable,snapshot/channel,glibc by default for GNU/Linux stdenv,channel/snapshot-specific,channel/snapshot-specific,not a distro ABI floor,Use pinned nixpkgs revision rather than distro release name.,https://nixos.org/
+distro,release,codename,variant,libc,libc_baseline,linux_uapi_headers_baseline,alternate_linux_uapi_headers_baseline,notes,source_url
+Arch Linux,rolling,,,glibc,snapshot-specific,snapshot-specific,,Package versions change continuously; pin package snapshot date if used.,https://archlinux.org/packages/core/x86_64/glibc/
+openSUSE Tumbleweed,rolling,,,glibc,snapshot-specific,snapshot-specific,,Use snapshot IDs if you must target it.,https://get.opensuse.org/tumbleweed/
+Fedora Rawhide,rolling development,,,glibc,snapshot-specific,snapshot-specific,,Not a stable ABI floor; use released Fedora rows instead.,https://fedoraproject.org/wiki/Releases/Rawhide
+Debian sid,rolling development,,,glibc,snapshot-specific,snapshot-specific,,Not a stable ABI floor; use released Debian rows instead.,https://www.debian.org/releases/sid/
+Gentoo,source/rolling profile,,,glibc or musl depending profile,profile/snapshot-specific,profile/snapshot-specific,,Too configurable for a single distro baseline.,https://www.gentoo.org/
+Void Linux,rolling,,,glibc or musl variants,snapshot-specific,snapshot-specific,,Separate glibc and musl variants; pin exact variant and snapshot.,https://voidlinux.org/
+NixOS unstable,snapshot/channel,,,glibc by default for GNU/Linux stdenv,channel/snapshot-specific,channel/snapshot-specific,,Use pinned nixpkgs revision rather than distro release name.,https://nixos.org/
