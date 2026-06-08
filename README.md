@@ -16,6 +16,12 @@ package release suffix. For example, `12.2.0-14+deb12u1` is recorded as
 SUSE `13.2.1+git8285`, are kept. Use `not packaged` when the distro release
 does not provide that C++ standard library package.
 
+Generated C++ standard library constraints use the same coarse version style as
+libc constraints. Versions with a major/minor pair become
+`@llvm//constraints/cxxstdlib:<flavor>.<major>.<minor>`. GCC snapshot versions
+without a minor component use the leading major, for example `12-20220319`
+becomes `@llvm//constraints/cxxstdlib:libstdcxx.12`.
+
 The goal is to help choose or generate build constraints for Linux sysroots,
 without encoding distro-specific target names in the data.
 
@@ -36,13 +42,10 @@ The generator reads all `*.csv` files and emits Bazel-style constants:
 # cxx_stdlib_source_url: https://archive.ubuntu.com/ubuntu/dists/jammy/main/binary-amd64/Packages.gz
 UBUNTU_2204_CONSTRAINTS = [
     "@llvm//constraints/libc:gnu.2.35",
+    "@llvm//constraints/cxxstdlib:libstdcxx.12",
     "@llvm//constraints/kernel/linux:5.15",
 ]
 ```
-
-The generated constraint list currently emits libc and kernel constraints. C++
-standard library flavor and version are emitted as comments until a versioned
-C++ standard library constraint namespace exists.
 
 Rows with snapshot-specific or non-versioned baselines are skipped with a
 comment.

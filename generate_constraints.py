@@ -44,6 +44,17 @@ def major_minor(version: str) -> str | None:
     return match.group(0)
 
 
+def major_minor_or_major(version: str) -> str | None:
+    return major_minor(version) or leading_major(version)
+
+
+def leading_major(version: str) -> str | None:
+    match = re.search(r"\d+", version)
+    if not match:
+        return None
+    return match.group(0)
+
+
 def libc_constraint(libc: str, baseline: str) -> str | None:
     libc_lower = libc.lower()
     if libc_lower == "musl":
@@ -52,6 +63,21 @@ def libc_constraint(libc: str, baseline: str) -> str | None:
         version = major_minor(baseline)
         if version:
             return f"@llvm//constraints/libc:gnu.{version}"
+    return None
+
+
+def cxx_stdlib_constraint(cxx_stdlib: str, baseline: str) -> str | None:
+    cxx_stdlib_lower = cxx_stdlib.lower()
+    if cxx_stdlib_lower == "libc++":
+        flavor = "libcxx"
+    elif cxx_stdlib_lower == "libstdc++":
+        flavor = "libstdcxx"
+    else:
+        return None
+
+    version = major_minor_or_major(baseline)
+    if version:
+        return f"@llvm//constraints/cxxstdlib:{flavor}.{version}"
     return None
 
 
@@ -94,11 +120,16 @@ def generate(csv_dir: Path) -> str:
         seen.add(name)
 
         libc = libc_constraint(row["libc"], row["libc_baseline"])
+        cxx_stdlib = cxx_stdlib_constraint(
+            row["cxx_stdlib"],
+            row["cxx_stdlib_baseline"],
+        )
         kernel = kernel_constraint(row["linux_uapi_headers_baseline"])
-        if not libc or not kernel:
+        if not libc or not cxx_stdlib or not kernel:
             lines.append(
-                f"# Skipped {name}: non-versioned libc/kernel baseline "
-                f"({row['libc_baseline']!r}, {row['linux_uapi_headers_baseline']!r})"
+                f"# Skipped {name}: non-versioned libc/cxxstdlib/kernel baseline "
+                f"({row['libc_baseline']!r}, {row['cxx_stdlib_baseline']!r}, "
+                f"{row['linux_uapi_headers_baseline']!r})"
             )
             continue
 
@@ -113,6 +144,7 @@ def generate(csv_dir: Path) -> str:
                 comment("cxx_stdlib_source_url", row["cxx_stdlib_source_url"]),
                 f"{name} = [",
                 f'    "{libc}",',
+                f'    "{cxx_stdlib}",',
                 f'    "{kernel}",',
                 "]",
                 "",
