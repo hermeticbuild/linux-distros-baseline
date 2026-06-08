@@ -14,6 +14,9 @@ FIELDS = (
     "release",
     "libc",
     "libc_baseline",
+    "cxx_stdlib",
+    "cxx_stdlib_baseline",
+    "cxx_stdlib_source_url",
     "linux_uapi_headers_baseline",
     "notes",
     "source_url",
@@ -103,6 +106,11 @@ def generate(csv_dir: Path) -> str:
             [
                 comment("notes", row["notes"]),
                 comment("source_url", row["source_url"]),
+                comment(
+                    "cxx_stdlib",
+                    f"{row['cxx_stdlib']} {row['cxx_stdlib_baseline']}",
+                ),
+                comment("cxx_stdlib_source_url", row["cxx_stdlib_source_url"]),
                 f"{name} = [",
                 f'    "{libc}",',
                 f'    "{kernel}",',

@@ -1,10 +1,10 @@
-distro,release,codename,variant,libc,libc_baseline,linux_uapi_headers_baseline,alternate_linux_uapi_headers_baseline,notes,source_url
-Debian,5,lenny,,glibc,2.7,2.6.26,,Very old Debian ABI reference.,https://www.debian.org/releases/lenny/
-Debian,6,squeeze,,glibc-compatible eglibc,2.11,2.6.32,,Debian used eglibc packaging; ABI baseline is GLIBC_2.11 era.,https://www.debian.org/doc/manuals/project-history/releases.en.html
-Debian,7,wheezy,,glibc-compatible eglibc,2.13,3.2,,Oldstable-era floor; not a practical current target.,https://wiki.debian.org/DebianWheezy
-Debian,8,jessie,,glibc,2.19,3.16,,Old compatibility reference.,https://www.debian.org/releases/jessie/
-Debian,9,stretch,,glibc,2.24,4.9,,Useful only when targeting old appliances or fleets.,https://wiki.debian.org/NewInStretch
-Debian,10,buster,,glibc,2.28,4.19,,Matches RHEL 8 glibc but has newer kernel headers.,https://www.debian.org/releases/buster/
-Debian,11,bullseye,,glibc,2.31,5.10,,Good old Debian and Ubuntu-ish floor; does not cover RHEL 8 glibc 2.28.,https://www.debian.org/releases/bullseye/amd64/release-notes.en.txt
-Debian,12,bookworm,,glibc,2.36,6.1,,Too new for EL9 or AL2023 if GLIBC_2.35+ symbols leak.,https://www.debian.org/releases/bookworm/amd64/release-notes/ch-whats-new.en.html
-Debian,13,trixie,,glibc,2.41,6.12,,Not broad compatibility; use only for Debian 13/newer class.,https://www.debian.org/releases/stable/release-notes/whats-new.html
+distro,release,codename,variant,libc,libc_baseline,cxx_stdlib,cxx_stdlib_baseline,cxx_stdlib_source_url,linux_uapi_headers_baseline,alternate_linux_uapi_headers_baseline,notes,source_url
+Debian,5,lenny,,glibc,2.7,libstdc++,4.3.2,https://archive.debian.org/debian/dists/lenny/main/binary-amd64/Packages.gz,2.6.26,,Very old Debian ABI reference.,https://www.debian.org/releases/lenny/
+Debian,6,squeeze,,glibc-compatible eglibc,2.11,libstdc++,4.4.5,https://archive.debian.org/debian/dists/squeeze/main/binary-amd64/Packages.gz,2.6.32,,Debian used eglibc packaging; ABI baseline is GLIBC_2.11 era.,https://www.debian.org/doc/manuals/project-history/releases.en.html
+Debian,7,wheezy,,glibc-compatible eglibc,2.13,libstdc++,4.7.2,https://archive.debian.org/debian/dists/wheezy/main/binary-amd64/Packages.gz,3.2,,Oldstable-era floor; not a practical current target.,https://wiki.debian.org/DebianWheezy
+Debian,8,jessie,,glibc,2.19,libstdc++,4.9.2,https://archive.debian.org/debian/dists/jessie/main/binary-amd64/Packages.gz,3.16,,Old compatibility reference.,https://www.debian.org/releases/jessie/
+Debian,9,stretch,,glibc,2.24,libstdc++,6.3.0,https://archive.debian.org/debian/dists/stretch/main/binary-amd64/Packages.gz,4.9,,Useful only when targeting old appliances or fleets.,https://wiki.debian.org/NewInStretch
+Debian,10,buster,,glibc,2.28,libstdc++,8.3.0,https://archive.debian.org/debian/dists/buster/main/binary-amd64/Packages.gz,4.19,,Matches RHEL 8 glibc but has newer kernel headers.,https://www.debian.org/releases/buster/
+Debian,11,bullseye,,glibc,2.31,libstdc++,10.2.1,https://deb.debian.org/debian/dists/bullseye/main/binary-amd64/Packages.gz,5.10,,Good old Debian and Ubuntu-ish floor; does not cover RHEL 8 glibc 2.28.,https://www.debian.org/releases/bullseye/amd64/release-notes.en.txt
+Debian,12,bookworm,,glibc,2.36,libstdc++,12.2.0,https://deb.debian.org/debian/dists/bookworm/main/binary-amd64/Packages.gz,6.1,,Too new for EL9 or AL2023 if GLIBC_2.35+ symbols leak.,https://www.debian.org/releases/bookworm/amd64/release-notes/ch-whats-new.en.html
+Debian,13,trixie,,glibc,2.41,libstdc++,14.2.0,https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.gz,6.12,,Not broad compatibility; use only for Debian 13/newer class.,https://www.debian.org/releases/stable/release-notes/whats-new.html
